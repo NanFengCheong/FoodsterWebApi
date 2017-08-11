@@ -256,9 +256,16 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\FoodModels.cs" />
+    <Compile Include="Models\FoodRatingModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MealModels.cs" />
     <Compile Include="Models\MeViewModels.cs" />
+    <Compile Include="Models\PhotoModels.cs" />
+    <Compile Include="Models\PriceRangeModels.cs" />
+    <Compile Include="Models\RestaurantModels.cs" />
+    <Compile Include="Models\TagModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
