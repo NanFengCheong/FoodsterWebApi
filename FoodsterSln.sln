@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodsterSln", "FoodsterSln\FoodsterSln.csproj", "{09091E65-42A9-41A2-81E1-1796BCBD47DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodsterApp", "FoodsterApp\FoodsterApp.csproj", "{AE587C15-0322-4294-829B-AD469E15BCCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{09091E65-42A9-41A2-81E1-1796BCBD47DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{09091E65-42A9-41A2-81E1-1796BCBD47DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{09091E65-42A9-41A2-81E1-1796BCBD47DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{09091E65-42A9-41A2-81E1-1796BCBD47DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE587C15-0322-4294-829B-AD469E15BCCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE587C15-0322-4294-829B-AD469E15BCCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE587C15-0322-4294-829B-AD469E15BCCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE587C15-0322-4294-829B-AD469E15BCCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,7 +11,13 @@
   <PropertyGroup>
     <UserSecretsId>aspnet-FoodsterSln-0a94401f-4c41-4864-801b-a008714a8e2e</UserSecretsId>
   </PropertyGroup>
+
   <ItemGroup>
+    <None Remove="Properties\PublishProfiles\FoodsterWebApi - Web Deploy.pubxml" />
+    <None Remove="Properties\PublishProfiles\FoodsterWebApp - Web Deploy.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GoogleApi" Version="3.0.3" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.2" />
@@ -34,6 +40,7 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>

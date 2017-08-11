@@ -23,13 +23,9 @@
         var map;
         var infowindow;
 
-        performAction();
         function performAction() {
-            var pyrmont = { lat: 0, lng: 0 };
+            var pyrmont = { lat: 2.92105, lng: 101.66700 };
 
-            navigator.geolocation.getCurrentPosition(function (position) {
-                pyrmont.lat = position.coords.latitude;
-                pyrmont.lng = position.coords.longitude;
 
                 map = new google.maps.Map(document.getElementById('map'), {
                     center: pyrmont,
@@ -46,11 +42,7 @@
                     type: ['restaurant']
                 }, callback);
             }
-            );
             
-
-           
-        }
 
         function callback(results, status) {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
