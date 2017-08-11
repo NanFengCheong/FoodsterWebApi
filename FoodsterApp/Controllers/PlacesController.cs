@@ -16,13 +16,13 @@ namespace FoodsterApp.Controllers
     public class PlacesController : ApiController
     {
         // GET: api/Places
-        public object Get()
+        public object Get(double latitude = 2.92105, double longitute= 101.66700, int radius = 1000)
         {
             PlacesNearBySearchRequest request = new PlacesNearBySearchRequest
             {
                 Key = ConfigurationManager.AppSettings["GoogleApiKey"],
-                Location = new Location(2.92105, 101.66700),
-                Radius = 1000,
+                Location = new Location(latitude, longitute),
+                Radius = radius,
                 Type = SearchPlaceType.Restaurant
             };
             var result = GooglePlaces.NearBySearch.Query(request);
