@@ -266,6 +266,18 @@
     <Compile Include="Migrations\201708120016320_AddInDbset.Designer.cs">
       <DependentUpon>201708120016320_AddInDbset.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708120210436_ReInit.cs" />
+    <Compile Include="Migrations\201708120210436_ReInit.Designer.cs">
+      <DependentUpon>201708120210436_ReInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708120221408_AddInUserTagModel.cs" />
+    <Compile Include="Migrations\201708120221408_AddInUserTagModel.Designer.cs">
+      <DependentUpon>201708120221408_AddInUserTagModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708120222384_AddInUserTagModel2.cs" />
+    <Compile Include="Migrations\201708120222384_AddInUserTagModel2.Designer.cs">
+      <DependentUpon>201708120222384_AddInUserTagModel2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FoodModels.cs" />
@@ -278,6 +290,7 @@
     <Compile Include="Models\PriceRangeModels.cs" />
     <Compile Include="Models\RestaurantModels.cs" />
     <Compile Include="Models\TagModels.cs" />
+    <Compile Include="Models\UserTagModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -403,6 +416,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708120016320_AddInDbset.resx">
       <DependentUpon>201708120016320_AddInDbset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708120210436_ReInit.resx">
+      <DependentUpon>201708120210436_ReInit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708120221408_AddInUserTagModel.resx">
+      <DependentUpon>201708120221408_AddInUserTagModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708120222384_AddInUserTagModel2.resx">
+      <DependentUpon>201708120222384_AddInUserTagModel2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
