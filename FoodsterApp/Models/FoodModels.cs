@@ -24,10 +24,10 @@ namespace FoodsterApp.Models
         public RestaurantModel Restaurant { get; set; }
 
         [ForeignKey("Tag")]
-        public int TagID { get; set; }
+        public string TagID { get; set; }
         public TagModel Tag { get; set; }
         [ForeignKey("Meal")]
-        public int MealID { get; set; }
+        public string MealID { get; set; }
         public MealModel Meal { get; set; }
     }
 }
