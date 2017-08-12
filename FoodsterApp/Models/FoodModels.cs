@@ -15,7 +15,7 @@ namespace FoodsterApp.Models
         public string Name { get; set; }
 
         [ForeignKey("PriceRange")]
-        public int PriceRangeId { get; set; }
+        public int PriceRangeID { get; set; }
         public PriceRangeModel PriceRange { get; set; }
 
 
