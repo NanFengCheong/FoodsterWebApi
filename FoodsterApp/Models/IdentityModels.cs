@@ -29,7 +29,7 @@ namespace FoodsterApp.Models
         public DbSet<PriceRangeModel> PriceRangeModels { get; set; }
         public DbSet<RestaurantModel> RestaurantModels { get; set; }
         public DbSet<TagModel> TagModels { get; set; }
-        public DbSet<UserTagModel> UserTagModels { get; set; }
+        public DbSet<UserTagModels> UserTagModels { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
