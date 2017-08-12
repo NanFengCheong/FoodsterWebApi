@@ -18,5 +18,6 @@ namespace FoodsterApp.Models
         public string OpeningHours { get; set; }
         public string ContactNo { get; set; }
         public string GooglePlacesID { get; set; }
+        public int Distance { get; set; }
     }
 }
