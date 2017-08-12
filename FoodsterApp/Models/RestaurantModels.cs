@@ -12,7 +12,7 @@ namespace FoodsterApp.Models
         public string Location { get; set; }
         public string GPSLocation { get; set; }
         public string OpeningHours { get; set; }
-        public string ContantNo { get; set; }
+        public string ContactNo { get; set; }
         public string GooglePlacesID { get; set; }
     }
 }
