@@ -22,10 +22,20 @@ namespace FoodsterApp.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<FoodModel> FoodModels { get; set; }
+        public DbSet<FoodRatingModel> FoodRatings { get; set; }
+        public DbSet<MealModel> MealModels { get; set; }
+        public DbSet<PhotoModel> PhotoModels { get; set; }
+        public DbSet<PriceRangeModel> PriceRangeModels { get; set; }
+        public DbSet<RestaurantModel> RestaurantModels { get; set; }
+        public DbSet<TagModel> TagModels { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+            
         }
+    
 
         public static ApplicationDbContext Create()
         {
