@@ -1,4 +1,5 @@
 ﻿using FoodsterApp.BLL;
+using FoodsterApp.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -14,23 +15,26 @@ namespace FoodsterApp.Controllers
     public class FoodRecommendController : ApiController
     {
         // GET: api/FoodRecommend
-        [Route("api/FoodRecommend/{UserID}")]
-        public async Task<object> Get(string UserID)
+        public async Task<object> Get(string UserID, string TagId="")
         {
-
             string response = await Recommender.InvokeRequestResponseService(UserID);
             var obj = JsonConvert.DeserializeObject<object>(response);
             JObject rss = JObject.Parse(response);
-            List<string> arr = new List<string>();
+            List<int> arr = new List<int>();
+
             for(int i = 1; i < 20; i++)
             {
                 string tempstring = (string)rss["Results"]["output1"][0]["Item " + i.ToString()];
                 if(!string.IsNullOrEmpty(tempstring))
-                    arr.Add(tempstring);
+                    arr.Add( int.Parse(tempstring));
             }
-            
 
-            return Json(arr);
+            ApplicationDbContext ApplicationDbContext = new ApplicationDbContext();
+            var arr3 = ApplicationDbContext.FoodModels.Include("Restaurant")
+                .Where(c => arr.Contains(c.FoodID) && c.TagID.Contains(TagId))
+                .Select(x => new { x.Restaurant.Name,x.Restaurant.GPSLocation,  x}).ToList();
+            //var arr2 = ApplicationDbContext.FoodModels.Where(c => arr3.Contains(c.RestaurantID)).ToList();
+            return Json(arr2);
         }
 
         // POST: api/FoodRecommend

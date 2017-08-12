@@ -281,6 +281,10 @@
     <Compile Include="Migrations\201708120222384_AddInUserTagModel2.Designer.cs">
       <DependentUpon>201708120222384_AddInUserTagModel2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708120608502_InitialCreate.cs" />
+    <Compile Include="Migrations\201708120608502_InitialCreate.Designer.cs">
+      <DependentUpon>201708120608502_InitialCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FoodModels.cs" />
@@ -428,6 +432,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708120222384_AddInUserTagModel2.resx">
       <DependentUpon>201708120222384_AddInUserTagModel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708120608502_InitialCreate.resx">
+      <DependentUpon>201708120608502_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
