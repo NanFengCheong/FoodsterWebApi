@@ -262,6 +262,10 @@
     <Compile Include="Migrations\201708112359040_AddInRelationship.Designer.cs">
       <DependentUpon>201708112359040_AddInRelationship.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708120016320_AddInDbset.cs" />
+    <Compile Include="Migrations\201708120016320_AddInDbset.Designer.cs">
+      <DependentUpon>201708120016320_AddInDbset.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FoodModels.cs" />
@@ -396,6 +400,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708112359040_AddInRelationship.resx">
       <DependentUpon>201708112359040_AddInRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708120016320_AddInDbset.resx">
+      <DependentUpon>201708120016320_AddInDbset.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
