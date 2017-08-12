@@ -7,13 +7,13 @@ using System.Web;
 
 namespace FoodsterApp.Models
 {
-    public class UserTagModel
+    public class UserTagModels
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int UserTagID { get; set; }
-        public int UserId { get; set; }
+        public int UserID { get; set; }
+        [ForeignKey("Tag")]
         public int TagID { get; set; }
-
+        public TagModel Tag { get; set; }
     }
 }
