@@ -278,6 +278,7 @@
     <Compile Include="Models\PriceRangeModels.cs" />
     <Compile Include="Models\RestaurantModels.cs" />
     <Compile Include="Models\TagModels.cs" />
+    <Compile Include="Models\UserTagModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
